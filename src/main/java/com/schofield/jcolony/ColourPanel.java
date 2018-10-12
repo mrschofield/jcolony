@@ -78,8 +78,7 @@ public class ColourPanel extends JPanel implements ActionListener
 	*/
 	public Color getAliveColor()
 	{
-		Color tmp = copyColor(aliveColor);
-		return tmp;
+		return copyColor(aliveColor);
 	}
 
 	/*!
@@ -88,8 +87,7 @@ public class ColourPanel extends JPanel implements ActionListener
 	*/
 	public Color getBorderColor()
 	{
-		Color tmp = copyColor(deadColor);
-		return tmp;
+		return copyColor(deadColor);
 	}
 
 	/*!
@@ -98,8 +96,7 @@ public class ColourPanel extends JPanel implements ActionListener
 	*/
 	public Color getDeadColor()
 	{
-		Color tmp = copyColor(deadColor);
-		return tmp;
+		return copyColor(deadColor);
 	}
 
 	/*!
@@ -108,8 +105,7 @@ public class ColourPanel extends JPanel implements ActionListener
 	*/
 	public Color getEnteredColor()
 	{
-		Color tmp = copyColor(enteredColor);
-		return tmp;
+		return copyColor(enteredColor);
 	}
 
 	/*!
@@ -180,7 +176,6 @@ public class ColourPanel extends JPanel implements ActionListener
 	*/
 	private Color copyColor(Color color_)
 	{
-		Color tmp = new Color( color_.getRed(), color_.getGreen(), color_.getBlue() );
-		return tmp;
+		return new Color( color_.getRed(), color_.getGreen(), color_.getBlue() );
 	}
 }

@@ -411,7 +411,7 @@ public class ColonyGui extends JFrame implements ActionListener, ColonyObserver
 		}
 		else
 		{
-				setJMenuBar(menu);
+			setJMenuBar(menu);
 			remove(ctrlPanel);
 		}
 	}
@@ -419,10 +419,8 @@ public class ColonyGui extends JFrame implements ActionListener, ColonyObserver
 	/*!
 		\e Purpose
 			- Provides a system entry-point to the Application.
-
 		\e Requirements
 			- None
-
 		\e Promise
 			- Starts the Colony GUI, and makes it visible to
 			  the user.

@@ -379,7 +379,7 @@ public class Colony
 	{
 		for ( int i = (HISTORY_SIZE-1) ; i >= 1 ; i--)
 		{
-				history[i] = history[i-1];
+			history[i] = history[i-1];
 		}
 
 		history[0] = generation_;

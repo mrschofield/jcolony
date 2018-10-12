@@ -72,7 +72,6 @@ public class CellShape extends JComponent implements MouseListener
 			- Returns a number that is lower or equal to max_ and above or equal
 			  to min_
 	*/
-
 	public int getRandom(int min_, int max_)
 	{
 		int r = min_ + (int)(Math.random()*max_);

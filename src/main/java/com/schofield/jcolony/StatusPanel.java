@@ -27,12 +27,12 @@ public class StatusPanel extends JPanel
 	private JLabel lblTitleStopStatus;
 
 	/*!
-	\e Purpose
-		- Sets up the Panel and adds Components
-	\e Requirements
-		- None
-	\e Promise
-		- None
+		\e Purpose
+			- Sets up the Panel and adds Components
+		\e Requirements
+			- None
+		\e Promise
+			- None
 	*/
 	public StatusPanel()
 	{
@@ -76,47 +76,41 @@ public class StatusPanel extends JPanel
 	}
 
 	/*!
-	\e Purpose
-		- Sets the Number of Generations
-
-	\e Requirements
-		- The current generation number.
-
-	\e Promise
-		- Updates the status panel, with the new number of
-		  generations as specified.
+		\e Purpose
+			- Sets the Number of Generations
+		\e Requirements
+			- The current generation number.
+		\e Promise
+			- Updates the status panel, with the new number of
+			generations as specified.
 	*/
-	public void setNumGens( int numGens_ )
+	public void setNumGens(int numGens_)
 	{
 		setNumGens(Integer.toString(numGens_));
 	}
 
 	/*!
-	\e Purpose
-		- Sets the Number of Generations
-
-	\e Requirements
-		- The current generation number.
-
-	\e Promise
-		- Updates the status panel, with the new number of
-		  generations as specified.
+		\e Purpose
+			- Sets the Number of Generations
+		\e Requirements
+			- The current generation number.
+		\e Promise
+			- Updates the status panel, with the new number of
+			generations as specified.
 	*/
-	public void setNumGens( String numGens_ )
+	public void setNumGens(String numGens_)
 	{
 		this.lblNumGens.setText(numGens_);
 	}
 
 	/*!
-	\e Purpose
-		- Sets the Population
-
-	\e Requirements
-		- The current population
-
-	\e Promise
-		- Updates the status panel, with the new population
-		  as specified.
+		\e Purpose
+			- Sets the Population
+		\e Requirements
+			- The current population
+		\e Promise
+			- Updates the status panel, with the new population
+			as specified.
 	*/
 	public void setPopulation( int population_ )
 	{
@@ -124,15 +118,13 @@ public class StatusPanel extends JPanel
 	}
 
 	/*!
-	\e Purpose
-		- Sets the Population
-
-	\e Requirements
-		- The current population
-
-	\e Promise
-		- Updates the status panel, with the new population
-		  as specified.
+		\e Purpose
+			- Sets the Population
+		\e Requirements
+			- The current population
+		\e Promise
+			- Updates the status panel, with the new population
+			as specified.
 	*/
 	public void setPopulation( String population_ )
 	{
@@ -140,17 +132,15 @@ public class StatusPanel extends JPanel
 	}
 
 	/*!
-	\e Purpose
-		- Sets the State
-
-	\e Requirements
-		- The current Colony State
-
-	\e Promise
-		- Updates the status panel, with the new state
-		  as specified.
+		\e Purpose
+			- Sets the State
+		\e Requirements
+			- The current Colony State
+		\e Promise
+			- Updates the status panel, with the new state
+			as specified.
 	*/
-	public void setState( String state_ )
+	public void setState(String state_)
 	{
 		this.lblState.setText(state_);
 	}
@@ -158,17 +148,15 @@ public class StatusPanel extends JPanel
 
 
 	/*!
-	\e Purpose
-		- Sets the StopStatus
-
-	\e Requirements
-		- The current StopStatus
-
-	\e Promise
-		- Updates the status panel, with the new StopStatus
-		  as specified.
+		\e Purpose
+			- Sets the StopStatus
+		\e Requirements
+			- The current StopStatus
+		\e Promise
+			- Updates the status panel, with the new StopStatus
+			as specified.
 	*/
-	public void setStopStatus( String stopStatus_ )
+	public void setStopStatus(String stopStatus_)
 	{
 		this.lblStopStatus.setText(stopStatus_);
 	}

@@ -13,7 +13,6 @@ import java.util.*;
 
 public class ColonyCtlr extends ColonyNotifier implements Runnable
 {
-	// Colony states
 	public static final int STOPPED  = 0;
 	public static final int PAUSED   = 1;
 	public static final int STEPPING = 2;
@@ -45,8 +44,8 @@ public class ColonyCtlr extends ColonyNotifier implements Runnable
 			width_ = 10;
 		if (height_ < 10)
 			height_ = 10;
+
 		colony = new Colony(width_,height_);
-		
 		state = STOPPED;
 	}
 
@@ -175,20 +174,20 @@ public class ColonyCtlr extends ColonyNotifier implements Runnable
 		{
 			case STOPPED:
 				threadSuspended = true;
-			break;
+				break;
 				
 			case PAUSED:
 				threadSuspended = true;
-			break;
+				break;
 				
 			case STEPPING:
 				threadSuspended = true;
 				generateNext();
-			break;
+				break;
 				
 			case RUNNING:
 				generateNext();
-			break;
+				break;
 		}
 		
 		if (state == RUNNING)
@@ -236,8 +235,7 @@ public class ColonyCtlr extends ColonyNotifier implements Runnable
 	*/
 	public boolean savePreset(String filename_)
 	{
-		boolean result = colony.savePreset(filename_);
-		return result;
+		return colony.savePreset(filename_);
 	}
 	
 	/*!

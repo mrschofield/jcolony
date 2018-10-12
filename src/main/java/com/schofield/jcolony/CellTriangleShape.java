@@ -22,7 +22,7 @@ public class CellTriangleShape extends CellShape
 	*/
 	public CellTriangleShape(ColonyCtlr ctrl_, int w_, int h_, int iamX_, int iamY_)
 	{
-			super(ctrl_, w_, h_, iamX_, iamY_);
+		super(ctrl_, w_, h_, iamX_, iamY_);
 	}
 
 	/*!
